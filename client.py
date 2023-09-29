@@ -7,7 +7,7 @@ def select_file():
     # si el archivo ya esta seleccionado se transcribe
     if file_path:
         import assemblyai as aai
-        # se debe cambiar por el api key del usuario
+        # se debe cambiar por el api key del usuario(la colocada es personal solo para uso de pruebas)
         aai.settings.api_key = f"3f02520cd10544df9292b2c534da483e"
         transcriber = aai.Transcriber()
         transcript = transcriber.transcribe(file_path)
